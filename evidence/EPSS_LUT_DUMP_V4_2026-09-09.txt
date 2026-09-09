@@ -1,0 +1,212 @@
+[15141.851352] (2)[13904|load_module    ] epss_lut: loading (read-only)
+[15141.851362] (2)[13904|load_module    ] epss_lut: clk_get(xo) -> ERR
+[15141.851365] (2)[13904|load_module    ] epss_lut: clk_get(xo_clk) -> ERR
+[15141.851368] (2)[13904|load_module    ] epss_lut: clk_get(qcom,xo) -> ERR
+[15141.851370] (2)[13904|load_module    ] epss_lut: clk_get(qcom,tz,XO) -> ERR
+[15141.851373] (2)[13904|load_module    ] epss_lut: clk_get(rpmhcc_xo) -> ERR
+[15141.851376] (2)[13904|load_module    ] epss_lut: clk_get(alternate) -> ERR
+[15141.851378] (2)[13904|load_module    ] epss_lut: clk_get(qcom,alternate) -> ERR
+[15141.851381] (2)[13904|load_module    ] epss_lut: clk_get(cpu_hw) -> ERR
+[15141.851383] (2)[13904|load_module    ] epss_lut: no clock resolved; freq_kHz shown as 0, raw LVAL/VOLT words are still valid
+[15141.851576] (3)[13905|epss_lut_probe ] epss_lut: ==== EPSS/DCVSH LUT read-only probe (SM8250 Kona) ====
+[15141.851580] (3)[13905|epss_lut_probe ] epss_lut: xo_rate=0 Hz, alternate_rate=0 Hz (0 = unresolved, freq shown as 0)
+[15141.851583] (3)[13905|epss_lut_probe ] epss_lut: stride=4 words; SRC=31:30 CNT=18:16 LVAL=7:0; VOLT=11:0 (x1000 uV)
+[15141.851602] (3)[13905|epss_lut_probe ] epss_lut: === freq-domain0 (small) @ 0x18591000 (CPU0-3) ===
+[15141.851604] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x000] enable/ctrl = 0x00000003
+[15141.851607] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x320] perf-state  = 0x00000010  (the only driver write target)
+[15141.851610] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x0f8] = 0x00000000
+[15141.851612] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x0fc] = 0x00000000
+[15141.851615] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x100] = 0x0004000f
+[15141.851618] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x304] = 0x00000004 (above LUT)
+[15141.851622] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x320] = 0x00000010 (above LUT)
+[15141.851627] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x34c] = 0x00007258 (above LUT)
+[15141.851630] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x358] = 0x00000014 (above LUT)
+[15141.851633] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x35c] = 0x00000018 (above LUT)
+[15141.851639] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3c0] = 0x00004040 (above LUT)
+[15141.851642] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3c4] = 0x6ecff5ea (above LUT)
+[15141.851645] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3c8] = 0x1b931666 (above LUT)
+[15141.851648] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3cc] = 0x437f9031 (above LUT)
+[15141.851651] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3d0] = 0x57513f66 (above LUT)
+[15141.851653] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3d4] = 0xe4fd7f71 (above LUT)
+[15141.851763] (3)[13905|epss_lut_probe ] epss_lut:   11 non-zero word(s) at/above 0x300 (first 11 shown)
+[15141.851766] (3)[13905|epss_lut_probe ] epss_lut:   row SRC CNT LVAL  freq_kHz   F-row (word0..3)                    V-row (word0..3)                    volt_uV
+[15141.851774] (3)[13905|epss_lut_probe ] epss_lut:    0 S0 C4 L 15      288  F:0x0004000f 0x40040015 0x4004001b 0x40040020  V:0x00000240 0x00010240 0x00020240 0x00030240   576000
+[15141.851784] (3)[13905|epss_lut_probe ] epss_lut:    1 S1 C4 L 36      691  F:0x40040024 0x40040029 0x4004002e 0x40040033  V:0x00040240 0x00050250 0x00060254 0x0007025c   576000
+[15141.851792] (3)[13905|epss_lut_probe ] epss_lut:    2 S1 C4 L 56     1075  F:0x40040038 0x4004003d 0x40040041 0x40040046  V:0x0008026c 0x00090274 0x000a0284 0x000b0298   620000
+[15141.851800] (3)[13905|epss_lut_probe ] epss_lut:    3 S1 C4 L 74     1420  F:0x4004004a 0x4004004f 0x40040054 0x40040059  V:0x000c02a8 0x000d02c0 0x000e02d0 0x000f02e4   680000
+[15141.851809] (3)[13905|epss_lut_probe ] epss_lut:    4 S1 C4 L 94     1804  F:0x4004005e 0x4004005e 0x4004005e 0x4004005e  V:0x001002f8 0x001002f8 0x001002f8 0x001002f8   760000
+[15141.851817] (3)[13905|epss_lut_probe ] epss_lut:    5 S1 C4 L 94     1804  F:0x4004005e 0x4004005e 0x4004005e 0x4004005e  V:0x001002f8 0x001002f8 0x001002f8 0x001002f8   760000
+[15141.851819] (3)[13905|epss_lut_probe ] epss_lut:    5: duplicate freq row -> boost/end marker, stop
+[15141.851821] (3)[13905|epss_lut_probe ] epss_lut: === domain 0 done ===
+[15141.851834] (3)[13905|epss_lut_probe ] epss_lut: === freq-domain1 (big) @ 0x18592000 (CPU4-6) ===
+[15141.851837] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x000] enable/ctrl = 0x00000003
+[15141.851839] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x320] perf-state  = 0x00000000  (the only driver write target)
+[15141.851842] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x0f8] = 0x00000000
+[15141.851844] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x0fc] = 0x00000000
+[15141.851847] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x100] = 0x40040025
+[15141.851850] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x304] = 0x00000004 (above LUT)
+[15141.851853] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x308] = 0x00000004 (above LUT)
+[15141.851858] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x34c] = 0x00009490 (above LUT)
+[15141.851861] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x358] = 0x00000014 (above LUT)
+[15141.851864] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x35c] = 0x00000018 (above LUT)
+[15141.851870] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3c0] = 0x00008000 (above LUT)
+[15141.851873] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3c4] = 0x79d64520 (above LUT)
+[15141.851876] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3c8] = 0x748479f2 (above LUT)
+[15141.851879] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3cc] = 0x341bcfab (above LUT)
+[15141.851882] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3d0] = 0x6413fc80 (above LUT)
+[15141.852022] (3)[13905|epss_lut_probe ] epss_lut:   10 non-zero word(s) at/above 0x300 (first 10 shown)
+[15141.852025] (3)[13905|epss_lut_probe ] epss_lut:   row SRC CNT LVAL  freq_kHz   F-row (word0..3)                    V-row (word0..3)                    volt_uV
+[15141.852032] (3)[13905|epss_lut_probe ] epss_lut:    0 S1 C4 L 37      710  F:0x40040025 0x4004002b 0x40040031 0x40040037  V:0x00000250 0x00010268 0x0002027c 0x00030294   592000
+[15141.852041] (3)[13905|epss_lut_probe ] epss_lut:    1 S1 C4 L 61     1171  F:0x4004003d 0x40040043 0x40040048 0x4004004d  V:0x000402a8 0x000502b8 0x000602c4 0x000702d4   680000
+[15141.852050] (3)[13905|epss_lut_probe ] epss_lut:    2 S1 C4 L 82     1574  F:0x40040052 0x40040057 0x4004005c 0x40040061  V:0x000802e4 0x000902f4 0x000a0304 0x000b0320   740000
+[15141.852058] (3)[13905|epss_lut_probe ] epss_lut:    3 S1 C4 L102     1958  F:0x40040066 0x4004006b 0x40040070 0x40040075  V:0x000c032c 0x000d0340 0x000e0354 0x000f0368   812000
+[15141.852067] (3)[13905|epss_lut_probe ] epss_lut:    4 S1 C4 L122     2342  F:0x4004007a 0x4004007e 0x4004007e 0x4004007e  V:0x00100378 0x00110388 0x00110388 0x00110388   888000
+[15141.852077] (3)[13905|epss_lut_probe ] epss_lut:    5 S1 C4 L126     2419  F:0x4004007e 0x4004007e 0x4004007e 0x4004007e  V:0x00110388 0x00110388 0x00110388 0x00110388   904000
+[15141.852179] (3)[13905|epss_lut_probe ] epss_lut:    6 S1 C4 L126     2419  F:0x4004007e 0x4004007e 0x4004007e 0x4004007e  V:0x00110388 0x00110388 0x00110388 0x00110388   904000
+[15141.852183] (3)[13905|epss_lut_probe ] epss_lut:    6: duplicate freq row -> boost/end marker, stop
+[15141.852185] (3)[13905|epss_lut_probe ] epss_lut: === domain 1 done ===
+[15141.852194] (3)[13905|epss_lut_probe ] epss_lut: === freq-domain2 (prime) @ 0x18593000 (CPU7) ===
+[15141.852197] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x000] enable/ctrl = 0x00000003
+[15141.852201] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x320] perf-state  = 0x00000000  (the only driver write target)
+[15141.852204] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x0f8] = 0x00000000
+[15141.852207] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x0fc] = 0x00000000
+[15141.852209] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x100] = 0x4004002c
+[15141.852212] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x304] = 0x00000004 (above LUT)
+[15141.852215] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x308] = 0x00000004 (above LUT)
+[15141.852220] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x34c] = 0x0000ccc8 (above LUT)
+[15141.852224] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x358] = 0x00000014 (above LUT)
+[15141.852227] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x35c] = 0x00000018 (above LUT)
+[15141.852233] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3c0] = 0x00008000 (above LUT)
+[15141.852235] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3c4] = 0x3ca6d49d (above LUT)
+[15141.852238] (3)[13905|epss_lut_probe ] epss_lut:   reg[0x3c8] = 0x3ca6d49d (above LUT)
+[15141.852418] (3)[13905|epss_lut_probe ] epss_lut:   8 non-zero word(s) at/above 0x300 (first 8 shown)
+[15141.852422] (3)[13905|epss_lut_probe ] epss_lut:   row SRC CNT LVAL  freq_kHz   F-row (word0..3)                    V-row (word0..3)                    volt_uV
+[15141.852429] (3)[13905|epss_lut_probe ] epss_lut:    0 S1 C4 L 44      844  F:0x4004002c 0x40040032 0x40040038 0x4004003e  V:0x00000244 0x00010258 0x00020268 0x00030278   580000
+[15141.852438] (3)[13905|epss_lut_probe ] epss_lut:    1 S1 C4 L 68     1305  F:0x40040044 0x40040049 0x4004004f 0x40040055  V:0x00040288 0x00050294 0x000602a8 0x000702b8   648000
+[15141.852447] (3)[13905|epss_lut_probe ] epss_lut:    2 S1 C4 L 91     1747  F:0x4004005b 0x40040061 0x40040067 0x4004006c  V:0x000802c8 0x000902dc 0x000a02f0 0x000b02fc   712000
+[15141.852455] (3)[13905|epss_lut_probe ] epss_lut:    3 S1 C4 L113     2169  F:0x40040071 0x40040076 0x4004007b 0x40040080  V:0x000c0320 0x000d0320 0x000e0334 0x000f0344   800000
+[15141.852464] (3)[13905|epss_lut_probe ] epss_lut:    4 S1 C4 L133     2553  F:0x40040085 0x4004008a 0x4004008f 0x40040094  V:0x00100354 0x00110368 0x00120378 0x00130388   852000
+[15141.852472] (3)[13905|epss_lut_probe ] epss_lut:    5 S1 C4 L148     2841  F:0x40040094 0x40040094 0x40040094 0x40040094  V:0x00130388 0x00130388 0x00130388 0x00130388   904000
+[15141.852480] (3)[13905|epss_lut_probe ] epss_lut:    6 S1 C4 L148     2841  F:0x40040094 0x40040094 0x40040094 0x40040094  V:0x00130388 0x00130388 0x00130388 0x00130388   904000
+[15141.852483] (3)[13905|epss_lut_probe ] epss_lut:    6: duplicate freq row -> boost/end marker, stop
+[15141.852485] (3)[13905|epss_lut_probe ] epss_lut: === domain 2 done ===
+[15141.852489] (3)[13905|epss_lut_probe ] epss_lut: ==== probe complete, rc=0 ====
+[15175.681062] (0)[14015|rmmod          ] epss_lut: unloading - no writes were performed
+[15485.702059] (3)[15220|load_module    ] epss_lut: loading (read-only)
+[15485.702069] (3)[15220|load_module    ] epss_lut: clk_get(xo) -> ERR
+[15485.702072] (3)[15220|load_module    ] epss_lut: clk_get(xo_clk) -> ERR
+[15485.702074] (3)[15220|load_module    ] epss_lut: clk_get(qcom,xo) -> ERR
+[15485.702077] (3)[15220|load_module    ] epss_lut: clk_get(qcom,tz,XO) -> ERR
+[15485.702080] (3)[15220|load_module    ] epss_lut: clk_get(rpmhcc_xo) -> ERR
+[15485.702082] (3)[15220|load_module    ] epss_lut: clk_get(alternate) -> ERR
+[15485.702085] (3)[15220|load_module    ] epss_lut: clk_get(qcom,alternate) -> ERR
+[15485.702088] (3)[15220|load_module    ] epss_lut: clk_get(cpu_hw) -> ERR
+[15485.702091] (3)[15220|load_module    ] epss_lut: no clock resolved; freq_kHz shown as 0, raw LVAL/VOLT words are still valid
+[15485.702257] (2)[15221|epss_lut_probe ] epss_lut: ==== EPSS/DCVSH LUT read-only probe (SM8250 Kona) ====
+[15485.702261] (2)[15221|epss_lut_probe ] epss_lut: xo_rate=0 Hz, alternate_rate=0 Hz (0 = unresolved, freq shown as 0)
+[15485.702264] (2)[15221|epss_lut_probe ] epss_lut: stride=4 words; SRC=31:30 CNT=18:16 LVAL=7:0; VOLT=11:0 (x1000 uV)
+[15485.702282] (2)[15221|epss_lut_probe ] epss_lut: === freq-domain0 (small) @ 0x18591000 (CPU0-3) ===
+[15485.702284] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x000] enable/ctrl = 0x00000003
+[15485.702288] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x320] perf-state  = 0x00000010  (the only driver write target)
+[15485.702291] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x0f8] = 0x00000000
+[15485.702294] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x0fc] = 0x00000000
+[15485.702297] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x100] = 0x0004000f
+[15485.702300] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x304] = 0x00000004 (above LUT)
+[15485.702305] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x320] = 0x00000010 (above LUT)
+[15485.702309] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x34c] = 0x00006958 (above LUT)
+[15485.702313] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x358] = 0x00000014 (above LUT)
+[15485.702315] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x35c] = 0x00000018 (above LUT)
+[15485.702321] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3c0] = 0x00004040 (above LUT)
+[15485.702325] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3c4] = 0xb3027f65 (above LUT)
+[15485.702328] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3c8] = 0x4bf695ff (above LUT)
+[15485.702331] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3cc] = 0x74a33df5 (above LUT)
+[15485.702334] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3d0] = 0x416abe76 (above LUT)
+[15485.702338] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3d4] = 0xbccea02b (above LUT)
+[15485.702448] (2)[15221|epss_lut_probe ] epss_lut:   11 non-zero word(s) at/above 0x300 (first 11 shown)
+[15485.702452] (2)[15221|epss_lut_probe ] epss_lut:   === DCVSH limit registers (driver never reads these) ===
+[15485.702455] (2)[15221|epss_lut_probe ] epss_lut:   0x304=0x00000004  0x308=0x00000000
+[15485.702459] (2)[15221|epss_lut_probe ] epss_lut:   0x348=0x00000000  0x34c=0x00006958  0x350=0x00000000  0x354=0x00000000
+[15485.702462] (2)[15221|epss_lut_probe ] epss_lut:   0x3c0=0x00004040  0x3c4=0xb305fddd  0x3c8=0x4bf9fecd  0x3cc=0x74a68d0f
+[15485.702466] (2)[15221|epss_lut_probe ] epss_lut:   0x3c0 decode: 0x00004040 -> bit15=0, [14:0]=0x4040
+[15485.702469] (2)[15221|epss_lut_probe ] epss_lut:   0x34c decode: 0x00006958 -> if kHz: 26968 kHz = 26.968 MHz
+[15485.702472] (2)[15221|epss_lut_probe ] epss_lut:   0x34c decode: 0x00006958 -> if raw count: 26968
+[15485.702475] (2)[15221|epss_lut_probe ] epss_lut:   0x3d0=0x416e9dde  0x3d4=0xbcd26b03
+[15485.702479] (2)[15221|epss_lut_probe ] epss_lut:   row SRC CNT LVAL  freq_kHz   F-row (word0..3)                    V-row (word0..3)                    volt_uV
+[15485.702486] (2)[15221|epss_lut_probe ] epss_lut:    0 S0 C4 L 15      288  F:0x0004000f 0x40040015 0x4004001b 0x40040020  V:0x00000240 0x00010240 0x00020240 0x00030240   576000
+[15485.702496] (2)[15221|epss_lut_probe ] epss_lut:    1 S1 C4 L 36      691  F:0x40040024 0x40040029 0x4004002e 0x40040033  V:0x00040240 0x00050250 0x00060254 0x0007025c   576000
+[15485.702505] (2)[15221|epss_lut_probe ] epss_lut:    2 S1 C4 L 56     1075  F:0x40040038 0x4004003d 0x40040041 0x40040046  V:0x0008026c 0x00090274 0x000a0284 0x000b0298   620000
+[15485.702514] (2)[15221|epss_lut_probe ] epss_lut:    3 S1 C4 L 74     1420  F:0x4004004a 0x4004004f 0x40040054 0x40040059  V:0x000c02a8 0x000d02c0 0x000e02d0 0x000f02e4   680000
+[15485.702522] (2)[15221|epss_lut_probe ] epss_lut:    4 S1 C4 L 94     1804  F:0x4004005e 0x4004005e 0x4004005e 0x4004005e  V:0x001002f8 0x001002f8 0x001002f8 0x001002f8   760000
+[15485.702531] (2)[15221|epss_lut_probe ] epss_lut:    5 S1 C4 L 94     1804  F:0x4004005e 0x4004005e 0x4004005e 0x4004005e  V:0x001002f8 0x001002f8 0x001002f8 0x001002f8   760000
+[15485.702533] (2)[15221|epss_lut_probe ] epss_lut:    5: duplicate freq row -> boost/end marker, stop
+[15485.702535] (2)[15221|epss_lut_probe ] epss_lut: === domain 0 done ===
+[15485.702547] (2)[15221|epss_lut_probe ] epss_lut: === freq-domain1 (big) @ 0x18592000 (CPU4-6) ===
+[15485.702550] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x000] enable/ctrl = 0x00000003
+[15485.702553] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x320] perf-state  = 0x00000000  (the only driver write target)
+[15485.702555] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x0f8] = 0x00000000
+[15485.702558] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x0fc] = 0x00000000
+[15485.702560] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x100] = 0x40040025
+[15485.702563] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x304] = 0x00000004 (above LUT)
+[15485.702566] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x308] = 0x00000004 (above LUT)
+[15485.702571] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x34c] = 0x00009490 (above LUT)
+[15485.702574] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x358] = 0x00000014 (above LUT)
+[15485.702576] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x35c] = 0x00000018 (above LUT)
+[15485.702582] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3c0] = 0x00008000 (above LUT)
+[15485.702585] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3c4] = 0xad0549ea (above LUT)
+[15485.702588] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3c8] = 0x9900e22b (above LUT)
+[15485.702590] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3cc] = 0xf4533225 (above LUT)
+[15485.702593] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3d0] = 0x048cb3f1 (above LUT)
+[15485.702703] (2)[15221|epss_lut_probe ] epss_lut:   10 non-zero word(s) at/above 0x300 (first 10 shown)
+[15485.702707] (2)[15221|epss_lut_probe ] epss_lut:   === DCVSH limit registers (driver never reads these) ===
+[15485.702709] (2)[15221|epss_lut_probe ] epss_lut:   0x304=0x00000004  0x308=0x00000004
+[15485.702713] (2)[15221|epss_lut_probe ] epss_lut:   0x348=0x00000000  0x34c=0x00009490  0x350=0x00000000  0x354=0x00000000
+[15485.702717] (2)[15221|epss_lut_probe ] epss_lut:   0x3c0=0x00008000  0x3c4=0xad0549ea  0x3c8=0x9900e22b  0x3cc=0xf4533225
+[15485.702721] (2)[15221|epss_lut_probe ] epss_lut:   0x3c0 decode: 0x00008000 -> bit15=1, [14:0]=0x0000
+[15485.702725] (2)[15221|epss_lut_probe ] epss_lut:   0x34c decode: 0x00009490 -> if kHz: 38032 kHz = 38.032 MHz
+[15485.702728] (2)[15221|epss_lut_probe ] epss_lut:   0x34c decode: 0x00009490 -> if raw count: 38032
+[15485.702731] (2)[15221|epss_lut_probe ] epss_lut:   0x3d0=0x048cb3f1  0x3d4=0x00000000
+[15485.702734] (2)[15221|epss_lut_probe ] epss_lut:   row SRC CNT LVAL  freq_kHz   F-row (word0..3)                    V-row (word0..3)                    volt_uV
+[15485.702741] (2)[15221|epss_lut_probe ] epss_lut:    0 S1 C4 L 37      710  F:0x40040025 0x4004002b 0x40040031 0x40040037  V:0x00000250 0x00010268 0x0002027c 0x00030294   592000
+[15485.702751] (2)[15221|epss_lut_probe ] epss_lut:    1 S1 C4 L 61     1171  F:0x4004003d 0x40040043 0x40040048 0x4004004d  V:0x000402a8 0x000502b8 0x000602c4 0x000702d4   680000
+[15485.702761] (2)[15221|epss_lut_probe ] epss_lut:    2 S1 C4 L 82     1574  F:0x40040052 0x40040057 0x4004005c 0x40040061  V:0x000802e4 0x000902f4 0x000a0304 0x000b0320   740000
+[15485.702771] (2)[15221|epss_lut_probe ] epss_lut:    3 S1 C4 L102     1958  F:0x40040066 0x4004006b 0x40040070 0x40040075  V:0x000c032c 0x000d0340 0x000e0354 0x000f0368   812000
+[15485.702841] (2)[15221|epss_lut_probe ] epss_lut:    4 S1 C4 L122     2342  F:0x4004007a 0x4004007e 0x4004007e 0x4004007e  V:0x00100378 0x00110388 0x00110388 0x00110388   888000
+[15485.702852] (2)[15221|epss_lut_probe ] epss_lut:    5 S1 C4 L126     2419  F:0x4004007e 0x4004007e 0x4004007e 0x4004007e  V:0x00110388 0x00110388 0x00110388 0x00110388   904000
+[15485.702895] (2)[15221|epss_lut_probe ] epss_lut:    6 S1 C4 L126     2419  F:0x4004007e 0x4004007e 0x4004007e 0x4004007e  V:0x00110388 0x00110388 0x00110388 0x00110388   904000
+[15485.702898] (2)[15221|epss_lut_probe ] epss_lut:    6: duplicate freq row -> boost/end marker, stop
+[15485.702901] (2)[15221|epss_lut_probe ] epss_lut: === domain 1 done ===
+[15485.702910] (2)[15221|epss_lut_probe ] epss_lut: === freq-domain2 (prime) @ 0x18593000 (CPU7) ===
+[15485.702913] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x000] enable/ctrl = 0x00000003
+[15485.702916] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x320] perf-state  = 0x00000000  (the only driver write target)
+[15485.702919] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x0f8] = 0x00000000
+[15485.702922] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x0fc] = 0x00000000
+[15485.702925] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x100] = 0x4004002c
+[15485.702928] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x304] = 0x00000004 (above LUT)
+[15485.702931] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x308] = 0x00000004 (above LUT)
+[15485.702936] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x34c] = 0x0000ccc8 (above LUT)
+[15485.702940] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x358] = 0x00000014 (above LUT)
+[15485.702943] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x35c] = 0x00000018 (above LUT)
+[15485.702949] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3c0] = 0x00008000 (above LUT)
+[15485.702952] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3c4] = 0x2e7088d3 (above LUT)
+[15485.702955] (2)[15221|epss_lut_probe ] epss_lut:   reg[0x3c8] = 0x2e7088d3 (above LUT)
+[15485.703121] (2)[15221|epss_lut_probe ] epss_lut:   8 non-zero word(s) at/above 0x300 (first 8 shown)
+[15485.703125] (2)[15221|epss_lut_probe ] epss_lut:   === DCVSH limit registers (driver never reads these) ===
+[15485.703129] (2)[15221|epss_lut_probe ] epss_lut:   0x304=0x00000004  0x308=0x00000004
+[15485.703132] (2)[15221|epss_lut_probe ] epss_lut:   0x348=0x00000000  0x34c=0x0000ccc8  0x350=0x00000000  0x354=0x00000000
+[15485.703135] (2)[15221|epss_lut_probe ] epss_lut:   0x3c0=0x00008000  0x3c4=0x2e7088d3  0x3c8=0x2e7088d3  0x3cc=0x00000000
+[15485.703138] (2)[15221|epss_lut_probe ] epss_lut:   0x3c0 decode: 0x00008000 -> bit15=1, [14:0]=0x0000
+[15485.703142] (2)[15221|epss_lut_probe ] epss_lut:   0x34c decode: 0x0000ccc8 -> if kHz: 52424 kHz = 52.424 MHz
+[15485.703145] (2)[15221|epss_lut_probe ] epss_lut:   0x34c decode: 0x0000ccc8 -> if raw count: 52424
+[15485.703148] (2)[15221|epss_lut_probe ] epss_lut:   0x3d0=0x00000000  0x3d4=0x00000000
+[15485.703151] (2)[15221|epss_lut_probe ] epss_lut:   row SRC CNT LVAL  freq_kHz   F-row (word0..3)                    V-row (word0..3)                    volt_uV
+[15485.703158] (2)[15221|epss_lut_probe ] epss_lut:    0 S1 C4 L 44      844  F:0x4004002c 0x40040032 0x40040038 0x4004003e  V:0x00000244 0x00010258 0x00020268 0x00030278   580000
+[15485.703167] (2)[15221|epss_lut_probe ] epss_lut:    1 S1 C4 L 68     1305  F:0x40040044 0x40040049 0x4004004f 0x40040055  V:0x00040288 0x00050294 0x000602a8 0x000702b8   648000
+[15485.703176] (2)[15221|epss_lut_probe ] epss_lut:    2 S1 C4 L 91     1747  F:0x4004005b 0x40040061 0x40040067 0x4004006c  V:0x000802c8 0x000902dc 0x000a02f0 0x000b02fc   712000
+[15485.703184] (2)[15221|epss_lut_probe ] epss_lut:    3 S1 C4 L113     2169  F:0x40040071 0x40040076 0x4004007b 0x40040080  V:0x000c0320 0x000d0320 0x000e0334 0x000f0344   800000
+[15485.703194] (2)[15221|epss_lut_probe ] epss_lut:    4 S1 C4 L133     2553  F:0x40040085 0x4004008a 0x4004008f 0x40040094  V:0x00100354 0x00110368 0x00120378 0x00130388   852000
+[15485.703203] (2)[15221|epss_lut_probe ] epss_lut:    5 S1 C4 L148     2841  F:0x40040094 0x40040094 0x40040094 0x40040094  V:0x00130388 0x00130388 0x00130388 0x00130388   904000
+[15485.703211] (2)[15221|epss_lut_probe ] epss_lut:    6 S1 C4 L148     2841  F:0x40040094 0x40040094 0x40040094 0x40040094  V:0x00130388 0x00130388 0x00130388 0x00130388   904000
+[15485.703214] (2)[15221|epss_lut_probe ] epss_lut:    6: duplicate freq row -> boost/end marker, stop
+[15485.703216] (2)[15221|epss_lut_probe ] epss_lut: === domain 2 done ===
+[15485.703220] (2)[15221|epss_lut_probe ] epss_lut: ==== probe complete, rc=0 ====
+[15488.210570] (2)[15250|rmmod          ] epss_lut: unloading - no writes were performed
